@@ -1,0 +1,4 @@
+RewriteEngine On
+
+# Redirect rule for the shortened URL
+RewriteRule ^([a-zA-Z0-9]+)$ api.php?action=redirect&shortUrl=$1 [L]
